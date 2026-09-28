@@ -5,67 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PORTAFOLIO GT CONSTRUYE</title>
   <style>
-    /* Elimina márgenes por defecto del navegador */
+    /* Reset de márgenes y pantalla completa */
     html, body {
       margin: 0;
       padding: 0;
       width: 100%;
       height: 100%;
-      overflow: hidden; /* Evita barras de desplazamiento innecesarias */
-      background-color: #333; /* Fondo oscuro mientras carga */
+      overflow: hidden;
+      background-color: #1a1a1a;
     }
 
-    /* Contenedor responsivo ocupando la pantalla completa */
+    /* Contenedor adaptativo */
     .embed-container {
       position: relative;
       width: 100%;
       height: 100vh;
     }
 
-    /* iframe ocupando todo el contenedor */
+    /* iframe del visor de FlipHTML5 */
     .embed-container iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      border: none;
+      border: 0;
     }
   </style>
 </head>
 <body>
 
+  <!-- Visor de FlipHTML5 -->
   <div class="embed-container">
     <iframe 
       src="https://online.fliphtml5.com/edbogu/PORTAFOLIO-GT-CONSTRUYE/" 
       title="PORTAFOLIO GT CONSTRUYE" 
-      seamless="seamless" 
-      scrolling="no" 
-      frameborder="0" 
-      allowtransparency="true" 
+      allow="fullscreen"
       allowfullscreen="true">
     </iframe>
   </div>
 
-
-<script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
-<script>
-  new CozeWebSDK.WebChatClient({
-    config: {
-      bot_id: '7690609991648133125',
-    },
-    componentProps: {
-      title: 'Coze',
-    },
-    auth: {
-      type: 'token',
-      token: 'pat_********',
-      onRefreshToken: function () {
-        return 'pat_********'
+  <!-- Chatbot de Coze (Chat SDK) -->
+  <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
+  <script>
+    new CozeWebSDK.WebChatClient({
+      config: {
+        bot_id: '7690609991648133125',
+      },
+      componentProps: {
+        title: 'Asistente GT Construye',
+      },
+      auth: {
+        type: 'unauth'
       }
-    }
-  });
-</script>
-</script>
+    });
+  </script>
 </body>
 </html>
