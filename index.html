@@ -54,8 +54,15 @@
       bot_id: '7690609991648133125',
     },
     componentProps: {
-      title: 'GT CONSTRUYE',
+      title: 'Coze',
     },
+    auth: {
+      type: 'token',
+      token: 'pat_********',
+      onRefreshToken: function () {
+        return 'pat_********'
+      }
+    }
   });
 </script>
 </body>
